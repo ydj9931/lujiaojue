@@ -2,56 +2,52 @@
 
 鹿角蕨欢迎来自真实工作场景的贡献。
 
-## 最优先的贡献
+## 先看四层价值
 
-1. **真实问题**：什么地方让用户困惑、增加操作负担或产生误判。
-2. **测试案例**：能够稳定复现 Advisor 判断问题的最小案例。
-3. **Advisor 改进**：只修改真正属于该 Advisor 的能力。
-4. **适配改进**：让更多 Agent 可以更自然地安装与调用鹿角蕨。
+每个改进最好明确主要解决哪一层：
+
+```text
+减熵 → 提效 → 成果 → 复利
+```
+
+不要为了“功能更多”增加功能。
+
+## 最有价值的贡献
+
+1. **减熵误判**：正常文件被误判成版本混乱、副本或无用内容。
+2. **模式误判**：一次偶然被错误识别为稳定重复。
+3. **成果偏航**：工作台很漂亮，但没有帮助用户更接近真实交付。
+4. **复利过度**：为了“沉淀”制造新的项目、文件和维护负担。
+5. **生命周期问题**：富丽或小王完成任务后仍污染后续上下文。
+6. **真实 eval**：能稳定复现以上问题的最小工作文件夹。
 
 ## Advisor First
 
-升级富丽：
-
 ```text
-默认修改 skills/fuli/
+富丽能力 → skills/fuli/
+小王能力 → skills/xiaowang/
+鹿角蕨工作文件夹 / Router / 工作台 → skills/lujiaojue/
 ```
 
-升级小王：
-
-```text
-默认修改 skills/xiaowang/
-```
-
-升级鹿角蕨工作空间 / Router / 工作台：
-
-```text
-默认修改 skills/lujiaojue/
-```
-
-只有稳定、明确的跨 Advisor 公共能力，才上移为公共协议。
+不要因为两个 Advisor “可能都需要”就提前建立公共层。
 
 ## 新 Advisor 的门槛
 
-不要因为“可以做”就创建新 Advisor。
-
 至少满足：
 
-1. 问题在真实工作中反复出现；
+1. 真实工作中反复出现；
 2. 需要稳定的专业判断；
-3. 普通 Agent 临时处理效果明显不足；
-4. 已有多个真实场景支持；
-5. 有办法验证它是否真的提高结果质量。
+3. 普通 Agent 临时处理长期效果不足；
+4. 已有多个真实场景；
+5. 有可验证的质量标准。
 
-## 提交建议
-
-Commit 示例：
+## Commit
 
 ```text
-feat(lujiaojue): improve workspace object detection
-feat(fuli): add publication tracking
-feat(xiaowang): add project drift checks
-fix(router): prevent advisor context leakage
+feat(lujiaojue): detect ambiguous document versions
+feat(fuli): improve compounding evidence
+feat(xiaowang): improve project drift checks
+fix(lifecycle): unload advisor after task
 ```
 
-请优先提交小而清晰的改动。
+优先小而清晰的改动。

@@ -1,31 +1,81 @@
 # Architecture
 
+鹿角蕨 v0.4 保持三层结构：
+
 ```text
 Host Agent
    ↓
-Installation Layer
-Plugin / Skill / Marketplace
+Plugin / Skill 安装层
    ↓
 skills/
-├── lujiaojue  → Workspace + Router + Workbench
-├── fuli       → Compounding Creation Advisor
-└── xiaowang   → Project Advisor
+├── lujiaojue  → 减熵 + 工作理解 + Router + Workbench
+├── xiaowang   → 项目成果与闭环
+└── fuli       → 成果复利与长期价值
 ```
 
-三层职责：
+## 两个总原则
+
+### 价值原则
 
 ```text
-Plugin / Extension = 安装与分发
-Skills             = 判断与能力
-HTML               = 当前工作台显示方式
+减熵 → 提效 → 成果 → 复利
 ```
 
-HTML 不承担路由、状态或 Advisor 判断。
+回答：
 
-Advisor 版本独立：
+> 鹿角蕨创造什么价值？
+
+### 行为原则
 
 ```text
-Lujiaojue 0.2.0
-Fuli      0.5.0
-Xiaowang  0.4.0
+顾问判断
+↓
+助理落实
 ```
+
+回答：
+
+> 鹿角蕨如何创造价值？
+
+“顾问”负责诊断真正问题、识别关键路径和判断是否值得行动。
+
+“助理”负责利用宿主 Agent 原生能力，把判断落实到文件、事实源、计划、决策、成果和工作台。
+
+## 小王
+
+小王负责回答：
+
+> 这一次工作能不能真正做成？
+
+核心方法：
+
+```text
+成果倒推
+→ 决策开路
+→ 关键路径推进
+→ 闭环验证
+```
+
+项目文件采用《工作成果项目文档整理指南》。
+
+## 富丽
+
+富丽负责回答：
+
+> 做成以后，什么不应该随着任务结束一起消失？
+
+## HTML 工作台
+
+工作台是显示层，不是产品本体。
+
+项目视图优先展示：
+
+```text
+最终成果
+关键时间节点
+当前最重要的 1–3 件事
+当前待决策
+当前最大卡点
+```
+
+没有可靠数据时，不制造完成度百分比、生产力分数或复利指数。
