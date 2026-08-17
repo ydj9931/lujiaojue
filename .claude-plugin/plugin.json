@@ -1,0 +1,12 @@
+{
+  "name": "lujiaojue",
+  "version": "0.2.0",
+  "description": "鹿角蕨生成式工作台：从你的工作里长出工作台。含 lujiaojue / fuli / xiaowang-assistant 三个 Skill。",
+  "author": {
+    "name": "ydj9931",
+    "url": "https://github.com/ydj9931"
+  },
+  "homepage": "https://github.com/ydj9931/lujiaojue",
+  "repository": "https://github.com/ydj9931/lujiaojue",
+  "keywords": ["lujiaojue", "fuli", "xiaowang", "workbench", "工作台", "advisor"]
+}

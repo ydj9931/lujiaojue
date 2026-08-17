@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "lujiaojue",
+  "description": "鹿角蕨生成式工作台：lujiaojue / fuli / xiaowang-assistant",
+  "owner": {
+    "name": "ydj9931"
+  },
+  "plugins": [
+    {
+      "name": "lujiaojue",
+      "description": "鹿角蕨工作台 + 富丽顾问 + 小王助理",
+      "version": "0.2.0",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/lujiaojue",
+        "./skills/fuli",
+        "./skills/xiaowang"
+      ]
+    }
+  ]
+}
