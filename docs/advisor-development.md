@@ -31,7 +31,7 @@ evals/xiaowang/
 
 ```text
 skills/fuli/
-core/
+skills/lujiaojue/
 SKILL.md
 ```
 
