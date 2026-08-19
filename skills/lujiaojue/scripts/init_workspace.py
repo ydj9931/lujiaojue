@@ -356,6 +356,12 @@ def main():
         "folder_root": str(folder),
         "internal_workspace_root": str(folder),
         "principle": "entropy-first-map-first-no-move",
+        "work_state": (
+            previous.get("work_state", {}) if isinstance(previous, dict) else {}
+        ),
+        "assistant_state": (
+            previous.get("assistant_state", {}) if isinstance(previous, dict) else {}
+        ),
         "candidate_work_objects": objects,
         "root_files": sorted(
             root_files,

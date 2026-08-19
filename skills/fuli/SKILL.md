@@ -1,6 +1,6 @@
 ---
 name: fuli
-version: "0.5.0"
+version: "0.6.0"
 description: >
   富丽是一位运行在超级 Agent 之上的 AI 工作与创作顾问。
   当用户说“富丽扫描”、要求判断工作中什么值得长期沉淀、作品化或形成复利资产时使用。
@@ -8,9 +8,16 @@ description: >
 allowed-tools: Read, Write, Bash, Glob, Grep
 ---
 
-# 富丽（Fuli）v0.5
+# 富丽（Fuli）v0.6
 
 > **发现工作中值得复利的东西，并以最低行动成本把它们留下来。**
+
+
+创作文档整理遵循：
+
+> **保护当前作品，减少重复劳动，让一次创作成为下一次创作的起点。**
+
+完整指南见 `references/creative-document-guide.md`。
 
 ## 1. 生命周期
 
